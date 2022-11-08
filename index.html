@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+        color: rgb(29, 23, 23);
+        box-sizing: border-box;
+      }
+      .accodiant {
+        width: 390px;
+        margin: 100px auto;
+      }
+      .item-1 {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 30px rgba(7, 7, 7, 0.123);
+        padding: 5px;
+        margin-bottom: 20px;
+      }
+      .numbers {
+        font-size: 16px;
+        font-weight: bold;
+        color: rgb(144, 151, 156);
+      }
+      .heading-text {
+        font-weight: bold;
+        font-size: 16px;
+        color: rgb(144, 151, 156);
+
+      }
+
+      .icon {
+        width: 20px;
+        stroke: orangered;
+      }
+      a {
+        cursor: pointer;
+      }
+      .selected-item-container {
+        box-shadow: 0px 0px 20px rgba(32, 30, 29, 0.178);
+        padding: 5px;
+        margin-bottom: 20px;
+        border-top: 5px solid orangered;
+      }
+      .hidden-box {
+        display: inline-block;
+      }
+      .selected-item {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      .hidden-box p {
+        font-size: 12px;
+        line-height: 1.6;
+        margin-bottom: 10px;
+        margin-left: 30px;
+        margin-right: 20px;
+      }
+      .hidden-box ul {
+        font-size: 12px;
+        margin-bottom: 10px;
+        margin-left: 46px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .selected {
+        color: rgb(29, 23, 23);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accodiant">
+      <div class="item-1">
+        <p class="numbers">01</p>
+        <p class="heading-text ">Lorem ipsum dolor sit amet consectetur</p>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
+            />
+          </svg>
+        </a>
+      </div>
+
+      <div class="selected-item-container">
+        <div class="selected-item">
+          <p class="numbers selected">02</p>
+          <p class="heading-text selected">Lorem ipsum dolor sit amet consectetur</p>
+          <a href="#" >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore
+            magni impedit neque sit fugiat, officiis, earum aliquid enim quod
+            quisquam porro, facere autem veniam? Doloremque hic tenetur quos
+            fugit quia.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>consectetur adipisicing elit.</li>
+            <li>Ut ullam inventore officiis eveniet</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="item-1">
+        <p class="numbers">03</p>
+        <p class="heading-text">Lorem ipsum dolor sit amet consectetur</p>
+        <a href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 4.5v15m0 0l6.75-6.75M12 19.5l-6.75-6.75"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
